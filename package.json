@@ -1,0 +1,23 @@
+{
+  "name": "proj-codequiz",
+  "version": "1.0.0",
+  "description": "Code Quiz For Discord",
+  "main": "./Discord/CodeQuiz.js",
+  "scripts": {
+    "test": "node ./Discord/CodeQuiz.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMHStudio/DiscordCodeQuizBot.git"
+  },
+  "keywords": [
+    "Discord",
+    "nw"
+  ],
+  "author": "PMH Studio / PMH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PMHStudio/DiscordCodeQuizBot/issues"
+  },
+  "homepage": "https://github.com/PMHStudio/DiscordCodeQuizBot#readme"
+}
