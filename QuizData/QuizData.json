@@ -28,5 +28,10 @@
         "question": "C언어에서 for문의 소괄호()의 구성요소는 왼쪽부터 '선언; 조건; 대입'순입니다",
         "explanation": "맞습니다, 또한, 구성요소를 무조건 다 적지 않고 빈칸으로 나두워도 됩니다",
         "awnser": true
+    },
+    {
+        "question": "C#에서 조건문 if에는 무조건 중괄호가 있어야 한다",
+        "explanation": "[기여](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/2) 기본적으로는\n\nif (조건식)\n{실행 문장}\n\n이지만 실행되는 문장이 하나일 경우\n\nif (조건식) 실행 문장\n\n으로 중괄호를 빼는것이 가능하다",
+        "awnser": false
     }
 ]
