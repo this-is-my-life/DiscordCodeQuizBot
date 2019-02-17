@@ -25,7 +25,14 @@ bot.on('message', (input) => {
   // Message Caculation.
   let msgArray = input.content.split(' ')
   if (msgArray[0] === 'cq!' || msgArray[0] === 'codequiz!') {
-    let quizNum = Math.floor(Math.random() * (QuizData.length - 1))
+    let quizNum
+    if (!msgArray[1]) {
+      quizNum = Math.floor(Math.random() * (QuizData.length - 1))
+    } else {
+      if (msgArray[1] <= QuizData.length - 1) {
+        quizNum = msgArray[1]
+      }
+    }
     let quizEmbed = new discord.RichEmbed()
       .setColor(0x0000ff)
       .setAuthor(input.author.username + '님이 Code Quiz를 풀고있습니다', input.author.displayAvatarURL)
