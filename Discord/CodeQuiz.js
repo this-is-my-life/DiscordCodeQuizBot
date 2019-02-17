@@ -41,7 +41,7 @@ bot.on('message', (input) => {
         if (!collected) {
           let quizFailByLate = new discord.RichEmbed()
             .setColor(0x808080)
-            .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new)')
+            .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new/choose)')
             .setAuthor(input.author.username + '님이 Code Quiz를 풀지못하셨습니다', input.author.displayAvatarURL)
             .setTitle('Quiz No.' + quizNum)
             .addField('Q. ' + QuizData[quizNum].question, '**A.** ' + QuizData[quizNum].explanation)
@@ -57,7 +57,7 @@ bot.on('message', (input) => {
           if (collected.array()[0].emoji.name === QuizAwnser) {
             let quizCorrectEmbed = new discord.RichEmbed()
               .setColor(0x00ff00)
-              .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new)')
+              .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new/choose)')
               .setAuthor(input.author.username + '님이 Code Quiz를 맞추셨습니다!', input.author.displayAvatarURL)
               .setTitle('Quiz No.' + quizNum)
               .addField('Q. ' + QuizData[quizNum].question, '**A.** ' + QuizData[quizNum].explanation)
@@ -65,7 +65,7 @@ bot.on('message', (input) => {
           } else {
             let quizNotCorrectEmbed = new discord.RichEmbed()
               .setColor(0xff0000)
-              .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new)')
+              .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new/choose)')
               .setAuthor(input.author.username + '님이 Code Quiz를 풀지못하셨습니다', input.author.displayAvatarURL)
               .setTitle('Quiz No.' + quizNum)
               .addField('Q. ' + QuizData[quizNum].question, '**A.** ' + QuizData[quizNum].explanation)
