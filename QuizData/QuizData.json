@@ -1,0 +1,32 @@
+[
+    {
+        "question": "프로그래밍과 코딩은 다른것입니다",
+        "explanation": "같습니다, 국립국어원 표준국어대사전에 따르면,\n```프로그래밍: 컴퓨터 프로그램을 작성하는 일. 일반적으로는 프로그램 작성 방법의 결정, 코딩(coding), 에러 수정 따위의 작업을 이르지만 특수하게 코딩만을 이를 때도 있다.\n\n코딩: 『컴퓨터』작업의 흐름에 따라 프로그램 언어의 명령문을 써서 프로그램을 작성하는 일.```\n으로서, 프로그래밍은 코딩을 포함하는 말입니다",
+        "awnser": false
+    },
+    {
+        "question": "C언어에서 세미콜론(;)은 의무가 아닙니다\n즉, 사람의 스타일에 따라 적을수도, 안적을수도 있습니다",
+        "explanation": "의무입니다, C언어 컴파일러(빌더)는 세미콜론으로 문장과 문장을 나눕니다.\n세미콜론을 사용하지 않을경우, 컴파일러가 컴파일(빌드)를 수행하지 못합니다",
+        "awnser": false
+    },
+    {
+        "question": "JavaScript언어에서 세미콜론은 의무입니다\n즉, 문장을 끝넬경우 무조건 적어야 합니다",
+        "explanation": "선택사항입니다, 예시로, JavaScript Standard Style에서는 세미콜론이 없어야 한다는 규칙이 있습니다! (예외사항도 있음)\n[정말](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding) [없어도](http://inimino.org/~inimino/blog/javascript_semicolons) [됩니다](https://www.youtube.com/watch?v=gsfbh17Ax9I)",
+        "awnser": false
+    },
+    {
+        "question": "C언어에서 문자열(String)을 선언할때, 문자(char.)의 배열(Array)를 사용합니다",
+        "explanation": "사용합니다,```c\nchar string[] = \"This is Char-Array\";```와 같이 문자열을 선언할수있습니다!\n하지만 출력은```c\nprintf(\"%s\\n\", string);```으로 간단하게 출력할수있습니다!",
+        "awnser": true
+    },
+    {
+        "question": "C언어에서 for문은 while문과 선언, 대입으로 대체가 가능합니다",
+        "explanation": "가능합니다, ```c\nfor (int n; n > 10; n++) {\n  printf(\"%d\", n)\n}\n```는 ```c\nint n;\n\nwhile (n > 10) {\n  printf(\"%d\", n)\n  n++;\n}```로 대체 가능합니다",
+        "awnser": true
+    },
+    {
+        "question": "C언어에서 for문의 소괄호()의 구성요소는 왼쪽부터 '선언; 조건; 대입'순입니다",
+        "explanation": "맞습니다, 또한, 구성요소를 무조건 다 적지 않고 빈칸으로 나두워도 됩니다",
+        "awnser": true
+    }
+]
