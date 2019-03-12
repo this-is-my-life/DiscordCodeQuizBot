@@ -36,7 +36,7 @@
     },
     {
         "question": "C#에서 switch문은 다중 if문으로 바꿀(대체) 수 있다",
-        "explanation": "바꿀 수 있습니다, 예를 들어\n\n```csharp\n```를 ```csharp\n```로 바꿀 수 있습니다",
+        "explanation": "바꿀 수 있습니다, 예를 들어\n\n```csharp\nstring a = \"b\";\n if (a == \"a\");\n\t{Console.WriteLine(\"a는 a값을 담고 있습니다\");}\nelse if (a == \"b\")\n\t{Console.WriteLine(\"a는 b값을 담고 있습니다\")}\nelse if(a == \"c\") ```를 ```csharp\n```로 바꿀 수 있습니다",
         "awnser": true
     },
     {
