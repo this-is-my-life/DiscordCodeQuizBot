@@ -36,7 +36,7 @@
     },
     {
         "question": "C#에서 switch문은 다중 if문으로 바꿀(대체) 수 있다",
-        "explanation": "바꿀 수 있습니다, 예를 들어\n\n```csharp\nstring a = \"b\";\n if (a == \"a\");\n\t{Console.WriteLine(\"a는 a값을 담고 있습니다\");}\nelse if (a == \"b\")\n\t{Console.WriteLine(\"a는 b값을 담고 있습니다\")}\nelse if(a == \"c\") ```를 ```csharp\n```로 바꿀 수 있습니다",
+        "explanation": "바꿀 수 있습니다, 예를 들어\n\n```cs\nint a = 3;\nif (a == 1)\n\n{\n    Console.WriteLine(\"변수 a는  1\");\n\n}\nelse if (a == 2)\n\n{\n    Console.WriteLine(\"변수 a는 2\");\n}\nelse if (a == 3)\n{\n    Console.WriteLine(\"변수 a는 3\");\n}\nelse\n\n{\n    Console.WriteLine(\"기타\")\n}\n//출력결과: 변수 a는 3```를 ```cs\nint a = 3;\nswitch (a)\n{\ncase 1:\n    Console.WriteLine(\"변수 a는 1\");\n    break;\ncase 2:\n    Console.WriteLine(\"변수 a는 2\");\n    break;\ncase 3:\n    Console.WriteLine(\"변수 a는 3\");\n    break;\ndefault:\n    Console.WriteLine(\"기타\");\n    break;\n}\n\n//출력 결과: 변수 a는 3```로 바꿀 수 있습니다",
         "awnser": true
     },
     {
