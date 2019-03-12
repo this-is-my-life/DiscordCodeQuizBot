@@ -35,8 +35,8 @@
         "awnser": false
     },
     {
-        "question": "C#에서 switch문은 다중 if문으로 바꿀(대체) 수 있다",
-        "explanation": "바꿀 수 있습니다, 예를 들어\n\n```cs\nint a = 3;\nif (a == 1)\n\n{\n    Console.WriteLine(\"변수 a는  1\");\n\n}\nelse if (a == 2)\n\n{\n    Console.WriteLine(\"변수 a는 2\");\n}\nelse if (a == 3)\n{\n    Console.WriteLine(\"변수 a는 3\");\n}\nelse\n\n{\n    Console.WriteLine(\"기타\")\n}\n//출력결과: 변수 a는 3```를 ```cs\nint a = 3;\nswitch (a)\n{\ncase 1:\n    Console.WriteLine(\"변수 a는 1\");\n    break;\ncase 2:\n    Console.WriteLine(\"변수 a는 2\");\n    break;\ncase 3:\n    Console.WriteLine(\"변수 a는 3\");\n    break;\ndefault:\n    Console.WriteLine(\"기타\");\n    break;\n}\n\n//출력 결과: 변수 a는 3```로 바꿀 수 있습니다",
+        "question": "C#에서 다중 if문은 switch문으로 바꿀(대체) 수 있다",
+        "explanation": "바꿀 수 있습니다, 예를 들어\n```cs\nint a = 3;\nif (a == 1)\n\n{\n    Console.WriteLine(\"변수 a는  1\");\n\n}\nelse if (a == 2)\n{\n    Console.WriteLine(\"변수 a는 2\");\n}\nelse if (a == 3)\n{\n    Console.WriteLine(\"변수 a는 3\");\n}\nelse\n{\n    Console.WriteLine(\"기타\")\n}\n//출력결과: 변수 a는 3```를 ```cs\nint a = 3;\nswitch (a)\n{\ncase 1:\n    Console.WriteLine(\"변수 a는 1\");\n    break;\ncase 2:\n    Console.WriteLine(\"변수 a는 2\");\n    break;\ncase 3:\n    Console.WriteLine(\"변수 a는 3\");\n    break;\ndefault:\n    Console.WriteLine(\"기타\");\n    break;\n}\n\n//출력 결과: 변수 a는 3```로 바꿀 수 있습니다",
         "awnser": true
     },
     {
