@@ -10,7 +10,7 @@
         "awnser": false
     },
     {
-        "question": "JavaScript언어에서 세미콜론은 의무입니다\n즉, 문장을 끝넬경우 무조건 적어야 합니다",
+        "question": "JavaScript에서 세미콜론은 의무입니다\n즉, 문장을 끝넬경우 무조건 적어야 합니다",
         "explanation": "선택사항입니다, 예시로, JavaScript Standard Style에서는 세미콜론이 없어야 한다는 규칙이 있습니다! (예외사항도 있음)\n[정말](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding) [없어도](http://inimino.org/~inimino/blog/javascript_semicolons) [됩니다](https://www.youtube.com/watch?v=gsfbh17Ax9I)",
         "awnser": false
     },
@@ -43,5 +43,10 @@
         "question": "프로그래밍에서 \"x = x + 2\"를 개산하면 1이 나옵니다",
         "explanation": "아닙니다, 프로그래밍은 수학이 아닙니다!\n저 식은 방정식이 아닌, ```fix\nx를 앞에서 정해진 x에 2를 더한값으로 정해라```라는뜻입니다",
         "awnser": false
+    },
+    {
+        "question": "JavaScript에서 모든 자료형은 함수로 이루워져 있습니다",
+        "explanation": "맞습니다, JavaScript의 모든 자료형은 함수로 이루워져 있어서\n실제로 ```js\nconsole.log(Boolean + Array + String + Number + Object)```로 입력하면```js\nfunction Boolean() { [native code] }function Array() { [native code] }function String() { [native code] }function Number() { [native code] }function Object() { [native code] }```로 출력되는걸 볼수있습니다",
+        "awnser": true
     }
 ]
