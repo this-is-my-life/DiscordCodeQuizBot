@@ -27,7 +27,7 @@ bot.on('message', (input) => {
   if (msgArray[0] === 'cq' || msgArray[0] === 'codequiz') {
     let quizNum
     if (!msgArray[1]) {
-      quizNum = Math.floor(Math.random() * (QuizData.length - 1))
+      quizNum = Math.floor(Math.random() * (QuizData.quiz.length - 1))
     } else {
       if (msgArray[1] <= QuizData.quiz.length - 1) {
         quizNum = msgArray[1]
