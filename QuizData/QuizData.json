@@ -40,8 +40,8 @@
         "awnser": true
     },
     {
-        "question": "node.js는 다양한 방면에서 사용이 가능하다",
-        "explanation": "다양한 방면에서 사용할 수 있습니다",
-        "awnser": true
+        "question": "프로그래밍에서 \"x = x + 2\"를 개산하면 1이 나옵니다",
+        "explanation": "아닙니다, 프로그래밍은 수학이 아닙니다!\n저 식은 방정식이 아닌, ```fix\nx를 앞에서 정해진 x에 2를 더한값으로 정해라```라는뜻입니다",
+        "awnser": false
     }
 ]
