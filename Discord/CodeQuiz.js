@@ -29,15 +29,17 @@ bot.on('message', (input) => {
     if (!msgArray[1]) {
       quizNum = Math.floor(Math.random() * (QuizData.length - 1))
     } else {
-      if (msgArray[1] <= QuizData.length - 1) {
+      if (msgArray[1] <= QuizData.quiz.length - 1) {
         quizNum = msgArray[1]
+      } else if (QuizData.info.language.includes(msgArray[1])) {
+        quizNum = QuizData.quiz.filter((thing) => thing.language === msgArray[1])
       }
     }
     let quizEmbed = new discord.RichEmbed()
       .setColor(0x0000ff)
       .setAuthor(input.author.username + '님이 Code Quiz를 풀고있습니다', input.author.displayAvatarURL)
       .setTitle('Quiz No.' + quizNum)
-      .addField('Q. ' + QuizData[quizNum].question, '제한시간 **1분**')
+      .addField('Q. ' + QuizData.quiz[quizNum].question, '제한시간 **1분**')
     input.channel.send(quizEmbed).then((th) => {
       th.react('⭕')
       th.react('❌')
@@ -51,13 +53,13 @@ bot.on('message', (input) => {
             .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new/choose)')
             .setAuthor(input.author.username + '님이 Code Quiz를 풀지못하셨습니다', input.author.displayAvatarURL)
             .setTitle('Quiz No.' + quizNum)
-            .addField('Q. ' + QuizData[quizNum].question, '**A.** ' + QuizData[quizNum].explanation)
+            .addField('Q. ' + QuizData.quiz[quizNum].question, '**A.** ' + QuizData.quiz[quizNum].explanation)
           th.edit(quizFailByLate)
         } else {
           let QuizAwnser
-          if (QuizData[quizNum].awnser === true) {
+          if (QuizData.quiz[quizNum].awnser === true) {
             QuizAwnser = '⭕'
-          } else if (QuizData[quizNum].awnser === false) {
+          } else if (QuizData.quiz[quizNum].awnser === false) {
             QuizAwnser = '❌'
           }
 
@@ -67,7 +69,7 @@ bot.on('message', (input) => {
               .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new/choose)')
               .setAuthor(input.author.username + '님이 Code Quiz를 맞추셨습니다!', input.author.displayAvatarURL)
               .setTitle('Quiz No.' + quizNum)
-              .addField('Q. ' + QuizData[quizNum].question, '**A.** ' + QuizData[quizNum].explanation)
+              .addField('Q. ' + QuizData.quiz[quizNum].question, '**A.** ' + QuizData.quiz[quizNum].explanation)
             th.edit(quizCorrectEmbed)
           } else {
             let quizNotCorrectEmbed = new discord.RichEmbed()
@@ -75,7 +77,7 @@ bot.on('message', (input) => {
               .setDescription('[문제, 정답, 풀이 오류신고, 수정요청, 추가신청](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/new/choose)')
               .setAuthor(input.author.username + '님이 Code Quiz를 풀지못하셨습니다', input.author.displayAvatarURL)
               .setTitle('Quiz No.' + quizNum)
-              .addField('Q. ' + QuizData[quizNum].question, '**A.** ' + QuizData[quizNum].explanation)
+              .addField('Q. ' + QuizData.quiz[quizNum].question, '**A.** ' + QuizData.quiz[quizNum].explanation)
             th.edit(quizNotCorrectEmbed)
           }
         }
