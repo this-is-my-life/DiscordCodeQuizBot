@@ -23,8 +23,8 @@ bot.on('message', (input) => {
   let filter = (reaction, user) => (reaction.emoji.name === '⭕' || reaction.emoji.name === '❌') && user.id === input.author.id
 
   // Message Caculation.
-  let msgArray = input.content.split(' ')
-  if (msgArray[0] === 'cq!' || msgArray[0] === 'codequiz!') {
+  let msgArray = input.content.split('!')
+  if (msgArray[0] === 'cq' || msgArray[0] === 'codequiz') {
     let quizNum
     if (!msgArray[1]) {
       quizNum = Math.floor(Math.random() * (QuizData.length - 1))
