@@ -33,7 +33,7 @@ bot.on('message', (input) => {
         quizNum = msgArray[1]
       } else if (QuizData.info.languages.includes(msgArray[1])) {
         do {
-          quizNum = Math.floor(Math.random() * (QuizData.length - 1))
+          quizNum = Math.floor(Math.random() * (QuizData.quiz.length - 1))
         } while (QuizData.quiz[quizNum].language === msgArray[1])
       }
     }
