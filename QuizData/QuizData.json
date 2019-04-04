@@ -1,6 +1,6 @@
 {
     "info": {
-        "languages": ["genaral", "c", "js", "csharp"]
+        "languages": ["genaral", "c", "js", "csharp", "html"]
     },
     "quiz": [
         {
@@ -58,22 +58,28 @@
             "awnser": false
         },
         {
-            "language": "js",
-            "question": "JavaScript에서 모든 자료형은 함수로 이루워져 있습니다",
-            "explanation": "맞습니다, JavaScript의 모든 자료형은 함수로 이루워져 있어서\n실제로 ```js\nconsole.log(Boolean + Array + String + Number + Object)```로 입력하면```js\nfunction Boolean() { [native code] }function Array() { [native code] }function String() { [native code] }function Number() { [native code] }function Object() { [native code] }```로 출력되는걸 볼수있습니다",
-            "awnser": true
+          "language": "js",
+          "question": "JavaScript에서 모든 자료형은 함수로 이루워져 있습니다",
+          "explanation": "맞습니다, JavaScript의 모든 자료형은 함수로 이루워져 있어서\n실제로 ```js\nconsole.log(Boolean + Array + String + Number + Object)```로 입력하면```js\nfunction Boolean() { [native code] }function Array() { [native code] }function String() { [native code] }function Number() { [native code] }function Object() { [native code] }```로 출력되는걸 볼수있습니다",
+          "awnser": true
         },
         {
-            "language": "js",
-            "question": "JavaScript에서 ```js\nvar a = \"30\"\na += true\na += 1 + 2\nconsole.log(a)```를 했을때, 출력은```\n> 34```이다",
-            "explanation": "\"30true3\"으로 출력됩니다, 이유는 다음과 같습니다```diff\n+ a가 30이라는 *문자열*이다\n+ *문자열*에 *참/거짓*을 넣으려 할때, JS는 *참/거짓*을 *문자열*로 바꿔 맨뒤에 놓는다\n+ *문자열*에 *숫자*를 넣으려 할때, JS는 *숫자*를 문자열으로 바꿔 맨뒤에 놓는다\n```",
-            "awnser": false
+          "language": "js",
+          "question": "JavaScript에서 ```js\nvar a = \"30\"\na += true\na += 1 + 2\nconsole.log(a)```를 했을때, 출력은```\n> 34```이다",
+          "explanation": "\"30true3\"으로 출력됩니다, 이유는 다음과 같습니다```diff\n+ a가 30이라는 *문자열*이다\n+ *문자열*에 *참/거짓*을 넣으려 할때, JS는 *참/거짓*을 *문자열*로 바꿔 맨뒤에 놓는다\n+ *문자열*에 *숫자*를 넣으려 할때, JS는 *숫자*를 문자열으로 바꿔 맨뒤에 놓는다\n```",
+          "awnser": false
         },
         {
-            "language": "csharp",
-            "question": "C#에서 ```csharp\ndynamic c = \"20\";\nc = false;\nc = 1 + 2;\nConsole.WriteLine(c.Getype);```를 했을때, 출력은```\n> System.Int32```이다",
-            "explanation": "dynamic은 C#에서 지원하는 인터프리터의 기능이다.\n그래서 변수 타입을 그때그때 계속 바꿀 수 있기에 출력하기 바로 전에 지정이 된\nint (System.Int32)로 변환되어 저렇게 표시되는 것이다",
-            "awnser": true
+          "language": "csharp",
+          "question": "C#에서 ```csharp\ndynamic c = \"20\";\nc = false;\nc = 1 + 2;\nConsole.WriteLine(c.Getype);```를 했을때, 출력은```\n> System.Int32```이다",
+          "explanation": "dynamic은 C#에서 지원하는 인터프리터의 기능이다.\n그래서 변수 타입을 그때그때 계속 바꿀 수 있기에 출력하기 바로 전에 지정이 된\nint (System.Int32)로 변환되어 저렇게 표시되는 것이다",
+          "awnser": true
+        },
+        {
+          "language": "html",
+          "question": "html에서 Enter를 칠려고 하면 <br>를 눌러야 한다.",
+          "explanation": "[기여](https://github.com/PMHStudio/DiscordCodeQuizBot/issues/3)Html에서는 키보드의 Enter를 눌러도 인식이 안 되고, 단지, 사용자가 보기 편할 수 있도록 하는 수단이기 때문이다.\n따라서, 글의 내용에서 Enter를 누를려고 하면 Enter 대신 <br>를 쳐야 한다",
+          "awnser": true
         }
     ]    
 }
