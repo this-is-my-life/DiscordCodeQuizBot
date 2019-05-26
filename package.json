@@ -4,7 +4,8 @@
   "description": "Code Quiz For Discord",
   "main": "./Discord/CodeQuiz.js",
   "scripts": {
-    "test": "node ./Discord/CodeQuiz.js"
+    "test": "node ./Discord/CodeQuiz.js",
+    "start": "node ./Discord/CodeQuiz.js"
   },
   "repository": {
     "type": "git",
