@@ -81,9 +81,9 @@ bot.on('message', (input) => {
           th.edit(quizFailByLate)
         } else {
           let QuizAwnser
-          if (QuizData.quiz[quizNum].awnser === true) {
+          if (QuizData.quiz[quizNum].awsner === true) {
             QuizAwnser = '⭕'
-          } else if (QuizData.quiz[quizNum].awnser === false) {
+          } else if (QuizData.quiz[quizNum].awsner === false) {
             QuizAwnser = '❌'
           }
 
